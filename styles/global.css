@@ -1,0 +1,134 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    min-height: 100vh;
+    background: #dddddd;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+[class*="flex-"] {
+    display: flex;
+}
+
+.flex-fixed.column {
+    flex-direction: column;
+}
+
+.flex-fixed.row {
+    flex-direction: row;
+}
+
+.flex-divide {
+    justify-content: space-between;
+}
+
+.flex-divide .divide-start {
+    align-content: flex-start;
+}
+
+.flex-divide .divide-end {
+    align-content: flex-end;
+}
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media only screen and (min-width: 1201px) {
+    .container {
+        width: 80%;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 85%;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 92%;
+    }
+    
+}
+
+@media only screen and (max-width: 601px) {
+    .flex-fluid.row {
+        /*initially row direction*/
+        flex-direction: row;
+    }
+    
+    .flex-fluid.column {
+        /*initially column direction*/
+        flex-direction: column;
+    }
+
+    .container {
+        width: 95%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .flex-fluid.row {
+        flex-direction: column;
+    }
+
+    .flex-fluid.column {
+        /*initially column direction*/
+        flex-direction: row;
+    }
+
+    .container.full {
+        width: 100%;
+    }
+    
+}
+
+
+.link-listing .link:hover{
+    color: #165b6b;
+    cursor: pointer;
+}
+
+
+.link-listing li+li {
+    margin-left: 18px;
+}
+
+.header1 {
+    font-size: 2.2rem;
+    font-family: 'Yeseva One', cursive;
+}
+
+.header2 {
+    font-size: 1.2rem;
+    font-family: 'Questrial', sans-serif;
+}
+
+.normal {
+    font-size: 1rem;
+    font-family: 'Questrial', sans-serif;
+}

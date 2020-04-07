@@ -1,0 +1,30 @@
+header {
+    height: 80px;
+    background: transparent;
+}
+
+header .selection {
+    margin-top: 20px;
+}
+
+
+@media only screen and (min-width: 731px) {
+
+    header .link-listing.menu  {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 730px) {
+
+
+    header ul.link-listing {
+        display: none;
+    }
+    
+}
+
+header .link-listing {
+    padding-top: 12px;
+}

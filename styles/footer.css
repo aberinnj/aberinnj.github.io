@@ -1,0 +1,26 @@
+
+footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+
+    background-color: #dd9910;
+    min-height: 50px;
+    max-height: 100px;
+    width: 100%;
+}
+
+footer .message {
+    flex-wrap: wrap;
+    padding-right: 18px;
+}
+
+.social-media a {
+    margin-top: 12px;
+    font-size: 1.78em;
+    color: #104d4d;
+}
+
+.social-media li.link {
+    align-self: center;
+}
